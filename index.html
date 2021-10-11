@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3ce05a" />
+
+    <title>Desafio - Dev Web Full Stack</title>
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="images/icon192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">
+          <img src="/images/icon192.png" alt="cabana" />
+        </a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="menu-item" href="#home">Início</a></li>
+            <li><a class="menu-item" href="#about">Sobre</a></li>
+          </ul>
+        </div>
+        <!--/menu-->
+
+        <a class="menu-item" href="https://github.com/Butewbr" target="_blank"
+          >Meu github</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div id="home" class="container">
+        <h1 class="title">Calculadora Duodígito</h1>
+        <p>Este aplicativo faz parte do Desafio Web FullStack</p>
+        <div class="buttons">
+          <button id="calculate">Calcular</button>
+          <button id="what-is">O que é duodígito?</button>
+        </div>
+        <!-- <label class="sr-only">Insira um número:</label>
+        <input
+          name="typebox"
+          type="number"
+          id="room-id"
+          placeholder="Valor a ser calculado"
+        /> -->
+      </div>
+    </main>
+
+    <script src="/src/scripts.js"></script>
+  </body>
+</html>
