@@ -1,0 +1,293 @@
+/* GENERAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Oxygen", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+:root {
+	--title-color: rgb(60, 224, 90);
+	--body-color: rgb(44, 44, 44);
+	--my-white: rgb(231, 239, 232);
+	--my-white2: rgb(250, 250, 250);
+	--my-gray: rgb(83, 83, 83);
+	--my-red: rgb(189, 39, 69);
+
+	--header-height: -1rem;
+
+	--title-font: "Oxygen", sans-serif;
+	--body-font: "Oxygen", sans-serif;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+h1 {
+	font-family: var(--title-font);
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--title-color);
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	text-align: center;
+	padding: 2rem 3rem;
+	color: var(--my-white);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+body #header {
+	border-bottom: 1px solid var(--title-color);
+	display: flex;
+	padding: 0 1rem;
+
+	top: 0;
+	left: 0;
+
+	position: fixed; /* MUDAR!!!!!!!!!! */
+	z-index: 1;
+	background-color: var(--body-color);
+	width: 100%;
+}
+
+body #header.scroll {
+	/*background: var(--base-color);*/
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+a.logo img {
+	width: 4rem;
+	height: auto;
+}
+
+a.menu-item {
+	color: var(--my-white);
+}
+
+a.menu-item:hover {
+	color: var(--title-color);
+}
+
+nav {
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	padding: 1rem;
+	justify-content: space-between;
+}
+
+nav ul li a {
+	transition: color 0.2s;
+	position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+	color: var(--title-color);
+}
+
+/* MAIN */
+
+main
+{
+	padding: calc(5rem + var(--header-height)) 0;
+}
+
+main div.container {
+	align-content: center;
+	padding: 5rem 1rem;
+	color: var(--title-color);
+	font-family: var(--body-font);
+	background: linear-gradient(270deg, var(--body-color), rgb(36, 33, 33));
+	border-bottom: 1px solid var(--title-color);
+}
+
+main div.container div.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main div.container button {
+	width: 10rem;
+	height: 3rem;
+	cursor: pointer;
+}
+
+main div.container button#calculate {
+	color: var(--body-color);
+	background-color: var(--title-color);
+	border: none;
+	font-weight: 700;
+	font-size: 1rem;
+	transition: 0.2s;
+}
+
+main div.container button#calculate:hover {
+	background-color: var(--my-white);
+}
+
+main div.container button#what-is {
+	color: var(--title-color);
+	background-color: transparent;
+	border: none;
+	font-weight: 700;
+	font-size: 1rem;
+	transition: 0.2s;
+}
+
+main div.container button#what-is:hover {
+	transform: translateY(-0.25rem);
+	color: var(--my-white);
+}
+
+/* Calculadora */
+div.calculation-section {
+	align-content: center;
+	padding: 5rem 1rem;
+	color: var(--body-color);
+	font-family: var(--body-font);
+	background: var(--body-color);
+	border-bottom: solid 1px var(--title-color);
+}
+
+div.calculation-section p {
+	text-align: center;
+	padding: 2rem 3rem;
+	color: var(--my-white);
+}
+
+div.calculator {
+	text-align: center;
+	position: relative;
+}
+
+label.indication {
+	font-weight: 700;
+	font-size: 1.35rem;
+	color: var(--my-white);
+	margin-right: 2rem;
+}
+
+input {
+	box-sizing: border-box;
+	padding: 0.25rem;
+
+	outline: none;
+
+	border: solid 3px var(--my-gray);
+	border-radius: 6px;
+
+	background-color: var(--my-white);
+
+	align-content: center;
+	font-family: var(--body-font);
+	height: 2rem;
+	font-size: 1.15rem;
+}
+
+input:focus {
+	border: solid 3px var(--title-color);
+	
+	/* border-color: var(--title-color); */
+	background-color: white;
+	color: var(--body-color);
+}
+
+/* ABOUT */
+main div#about {
+	align-content: center;
+	padding: 5rem 1rem;
+	color: var(--title-color);
+	font-family: var(--body-font);
+	background: linear-gradient(90deg, var(--body-color), rgb(36, 33, 33));
+	border-bottom: 1px solid var(--title-color);
+	/* box-shadow: 0 0 12px rgba(0, 0, 0, 1); */
+}
+
+div.examples
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+span.correct
+{
+	font-weight: 700;
+	color: var(--title-color);
+}
+
+span.wrong
+{
+	font-weight: 700;
+	color: var(--my-red);
+}
+
+div.examples ul
+{
+	padding: 1rem;
+	text-align: justify
+}
+
+ul.correct-examples
+{
+	text-decoration-color: var(--title-color);
+	display: inline;
+	align-content: center;
+	font-weight: 700;
+	text-align: center;
+	justify-content: justify;
+	color: var(--my-white);
+}
+
+ul.correct-examples li::before
+{
+	margin-right: 0.5rem;
+	content: "\2022";
+	color: var(--title-color);
+}
+
+ul.wrong-examples
+{
+	text-decoration-color: var(--title-color);
+	display: inline;
+	align-content: center;
+	font-weight: 700;
+	text-align: center;
+	justify-content: justify;
+	color: var(--my-white);
+}
+
+ul.wrong-examples li::before
+{
+	margin-right: 0.5rem;
+	content: "\2022";
+	color: var(--my-red);
+}
+
+h1.about-the-challenge
+{
+	margin-top: 1rem;
+}

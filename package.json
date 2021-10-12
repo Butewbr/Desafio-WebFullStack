@@ -1,0 +1,23 @@
+{
+  "name": "desafio_duodigito",
+  "version": "1.0.0",
+  "description": "Desafio para vaga Desenvolvedor Web Fullstack - calculadora de menor múltiplo duodígito",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Butewbr/Desafio-WebFullStack.git"
+  },
+  "keywords": [],
+  "author": "Bernardo Pandolfi Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Butewbr/Desafio-WebFullStack/issues"
+  },
+  "homepage": "https://github.com/Butewbr/Desafio-WebFullStack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
