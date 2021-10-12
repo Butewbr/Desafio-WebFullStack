@@ -1,0 +1,21 @@
+{
+    "name": "Desafio - Dev Web Full Stack",
+    "short_name": "Desafio Bridge",
+    "start_url": "/",
+    "background_color": "#2f2f2f",
+    "theme_color": "#3ce05a",
+    "display": "standalone",
+    "icons":
+    [
+        {
+            "src": "../images/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "../images/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

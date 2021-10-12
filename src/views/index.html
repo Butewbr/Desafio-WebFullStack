@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#3ce05a" />
+
+		<title>Desafio - Dev Web Full Stack</title>
+
+		<link rel="stylesheet" href="/style/style.css" />
+		<link rel="manifest" href="/js/pwa.webmanifest" />
+		<link rel="apple-touch-icon" href="/images/icon192.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header id="header">
+			<nav class="container">
+				<a class="logo" href="#">
+					<img src="/images/icon192.png" alt="cabana" />
+				</a>
+				<div class="menu">
+					<ul class="grid">
+						<li><a class="menu-item" href="#calculator">Calculadora</a></li>
+						<li><a class="menu-item" href="#about">Sobre</a></li>
+					</ul>
+				</div>
+				<!--/menu-->
+
+				<a class="menu-item" href="https://github.com/Butewbr" target="_blank"
+					>Meu github</a
+				>
+			</nav>
+		</header>
+		<main>
+			<div id="home" class="container">
+				<h1 class="title">Calculadora Duodígito</h1>
+				<p>Este aplicativo faz parte do Desafio Web FullStack</p>
+				<div class="buttons">
+					<a href="#calculator">
+						<button id="calculate">Calcular</button>
+					</a>
+					<a href="#about">
+						<button id="what-is" href="#about">O que é duodígito?</button>
+					</a>
+				</div>
+			</div>
+
+			<div id="calculator" class="calculation-section">
+				<h1>Calculadora</h1>
+				<p>
+					Insira um valor maior ou igual a 100 na caixa abaixo para calcular seu
+					menor duodígito multiplo.
+				</p>
+
+				<div id="calc" class="calculator">
+					<label class="indication">Digite um número: </label>
+					<input
+						name="typebox"
+						type="number"
+						id="typebox"
+						placeholder="Calcular..."
+					/>
+					<br />
+					<a href="">
+						<button id="calculate" class="true-calculate-button">
+							Calcular!
+						</button>
+					</a>
+					<div class="answer">
+						<label id="answer">Resposta:</label>
+						<h1 id="final-answer">Insira um valor!</h1>
+						<div class="aditional-information">
+							<p id="time-of-execution">
+								Tempo de execução: <span id="time-value">0 ms</span>
+							</p>
+							<p id="multiplied-number">
+								Valor multiplicado: <span id="multiplied-value">ㅡ</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about">
+				<h1>O que é duodígito?</h1>
+				<p>
+					Um número é duodígito quando ele possui no máximo dois algarismos
+					distintos. Veja alguns exemplos
+					<span class="correct">certos</span> e
+					<span class="wrong">errados</span>:
+				</p>
+				<div class="examples">
+					<ul class="correct-examples">
+						<li>2020</li>
+						<li>15</li>
+						<li>888</li>
+					</ul>
+					<ul class="wrong-examples">
+						<li>613</li>
+						<li>2021</li>
+						<li>1337</li>
+					</ul>
+				</div>
+				<h1 class="about-the-challenge">Sobre o desafio</h1>
+				<p>
+					Este desafio faz parte da segunda etapa do Processo Seletivo
+					Bridge.<br />
+					O desafio consiste em implementar um
+					<a id="PWA"href="https://rockcontent.com/br/blog/progressive-web-apps/" target="_blank"> Progressive Web App (PWA) </a> capaz de calcular o menor número
+					duodígito múltiplo de um valor maior que cem escolhido pelo
+					usuário.
+				</p>
+			</div>
+		</main>
+
+		<script src="/scripts/main.js"></script>
+		<script src="/js/pwa.js"></script>
+	</body>
+</html>
